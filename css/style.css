@@ -114,7 +114,7 @@ a {
   position: relative;
 }
 
-.page-main {
+.page-main-inner {
   display: flex;
   height: 100%;
   min-height: 852px;
@@ -175,18 +175,18 @@ a {
 }
 
 .btn {
-  display: block;
   background-color: #FBF138;
   color: #2B3541;
   box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
   text-transform: uppercase;
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   text-decoration: none;
   transition: 0.5s ease;
   text-align: center;
-  max-width: 252px;
+  border: none;
 }
 
 .btn:hover {
@@ -196,8 +196,7 @@ a {
 }
 
 .btn-main {
-  padding: 20px 0;
-  letter-spacing: 0.03em;
+  padding: 20px 30px;
 }
 
 .scroll-btn {
@@ -212,7 +211,8 @@ a {
 }
 
 .page-events {
-  margin-top: 160px;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .title-h3 {
@@ -221,6 +221,7 @@ a {
   font-weight: 700;
   margin: 0;
   margin-bottom: 40px;
+
 }
 
 .text-date {
@@ -262,7 +263,7 @@ a {
 .events-list {
   display: grid;
   grid-template: 600px / repeat(3, 365px);
-  grid-gap: 20px;
+  grid-gap: 22px;
 }
 
 .events-item {
@@ -322,15 +323,123 @@ a {
 
 .btn-link {
   padding: 20px 37px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 150%;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #FBF138;
   background: #2B3541;
   box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
-  border: none;
   cursor: pointer;
+}
+
+.btn-link:focus {
+  outline: none;
+}
+
+.page-form {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #F3F3F3;
+}
+
+.page-form-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-form {
+  margin: 0 auto;
+}
+
+.page-form-title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.page-form .title-h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.circle-form {
+  width: 101px;
+  height: 101px;
+  position: absolute;
+  top: -29px;
+  left: -59px;
+}
+
+.contacts-form-email {
+  margin-right: 20px;
+  display: block;
+  width: 372px;
+  background-color: #FFFFFF;
+  border: none;
+  padding: 19px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts-form-email::placeholder {
+  opacity: 0.3;
+}
+
+.contacts-form-email:focus {
+  outline: none;
+}
+
+.contacts-form-input {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.btn-form {
+  padding: 21px 42px;
+  cursor: pointer;
+}
+
+.contacts-form input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 0;
+  padding: 0;
+  vertical-align: top;
+  outline: none;
+  background: url(../images/icons/check_box_empty.svg) 0 0 no-repeat;
+}
+
+.contacts-form input[type='checkbox']:checked {
+  background: url(../images/icons/check_box.svg);
+}
+
+.contacts-form input[type='email']:valid {
+  border: none;
+}
+
+.contacts-form input[type='email']:invalid {
+  border: 1px solid red;
+}
+
+.checkbox-area {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-area label {
+  font-size: 11px;
+  line-height: 150%;
+  color: rgba(43, 53, 65, 0.5);
+}
+
+.check-link {
+  color: rgba(43, 53, 65, 0.5);
+  border-bottom: 1px solid rgba(43, 53, 65, 0.5);
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.check-link:hover {
+  color: rgba(43, 53, 65, 1);
+  border-bottom: 1px solid rgba(43, 53, 65, 1);
 }
