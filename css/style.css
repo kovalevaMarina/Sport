@@ -465,7 +465,6 @@ a {
 
 .about-item:not(:last-child) {
   margin-right: 15px;
-  padding-right: 50px;
 }
 
 .page-about .title-h3 {
@@ -475,6 +474,7 @@ a {
 .about-description {
   margin: 0;
   margin-bottom: 34px;
+  padding-right: 50px;
   line-height: 150%;
 }
 
@@ -498,5 +498,35 @@ a {
   width: 100%;
   height: 336px;
   object-fit: cover;
+}
+
+.page-skills {
+  padding-bottom: 170px;
+}
+
+.page-skills-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-item {
+  flex: 0 0 22%;
+}
+
+.skill-item:not(:last-child) {
+  margin-right: 3%;
+}
+
+.page-skills .title-h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+}
+
+.skill-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  opacity: 0.6;
 }
 
