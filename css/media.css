@@ -1,0 +1,25 @@
+@media (min-width: 1101px) {
+  .header-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .page-header {
+    display: none;
+  }
+
+  .page-header-left {
+    display: flex;
+  }
+
+  .menu {
+    border: none;
+    background: transparent;
+  }
+
+  .menu:focus {
+    cursor: pointer;
+    outline: none;
+  }
+}
