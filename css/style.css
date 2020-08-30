@@ -43,7 +43,7 @@ a {
 .header-logo img,
 .footer-logo img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: 30px;
   border-style: none;
 }
@@ -129,16 +129,16 @@ a {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  position: relative;
 }
 
 .page-main-inner {
   display: flex;
   height: 100%;
   min-height: 852px;
+  position: relative;
 }
 
-.page-main .main-img {
+.main-img {
   position: absolute;
   top: 0;
   right: -59px;
@@ -158,7 +158,7 @@ a {
   flex-direction: column;
   position: relative;
   z-index: 1;
-  max-width: 652px;
+  max-width: 634px;
 }
 
 .main-content-description {
@@ -212,6 +212,7 @@ a {
 
 .btn-main {
   padding: 20px 30px;
+  width: 252px;
 }
 
 .scroll-btn {
@@ -277,7 +278,7 @@ a {
 
 .events-list {
   display: grid;
-  grid-template: 600px / repeat(3, 365px);
+  grid-template: 600px / repeat(3, 1fr);
   grid-gap: 22px;
 }
 
@@ -311,6 +312,12 @@ a {
   margin-right: 0;
 }
 
+.events-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .events-item-detail {
   position: relative;
   z-index: 1;
@@ -321,21 +328,18 @@ a {
   grid-row: 1/2;
   grid-column: 1/2;
   background-image: url(../images/files/@1x/maraphon.png);
-  background-repeat: no-repeat;
 }
 
 .events-item-vebinar {
   grid-row: 1/2;
   grid-column: 2/3;
   background-image: url(../images/files/@1x/Vebinar_1.png);
-  background-repeat: no-repeat;
 }
 
 .events-item-yoga {
   grid-row: 1/2;
   grid-column: 3/4;
   background-image: url(../images/files/@1x/Vebinar_2.png);
-  background-repeat: no-repeat;
 }
 
 .btn-link {
@@ -361,7 +365,6 @@ a {
 }
 
 .page-workout .title-h3 {
-  max-width: 356px;
   margin: 0;
 }
 
@@ -464,8 +467,8 @@ a {
   width: 101px;
   height: 101px;
   position: absolute;
-  top: -29px;
-  left: -24px;
+  top: -35px;
+  left: -38px;
 }
 
 .contacts-form-email {
@@ -555,6 +558,7 @@ a {
 .page-about-inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about-item {
@@ -580,7 +584,7 @@ a {
 
 .btn-about {
   padding: 20px 0;
-  max-width: 225px;
+  width: 225px;
 }
 
 .about-thumb {
@@ -607,13 +611,11 @@ a {
 .page-skills-inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .skill-item {
   flex: 0 0 22%;
-}
-
-.skill-item:not(:last-child) {
   margin-right: 3%;
 }
 

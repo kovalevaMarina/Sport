@@ -1,8 +1,38 @@
+@media (max-width: 1280px) {
+  .main-content {
+    padding-bottom: 40px;
+  }
+
+  .main-img {
+    right: 0;
+  }
+
+  .main-content-description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .title-h1 {
+    font-size: 35px;
+  }
+
+  .page-skills-inner {
+    justify-content: space-between;
+  }
+
+  .skill-item {
+    flex: 0 0 47%;
+    margin-right: 3%;
+  }
+}
+
 @media (min-width: 1101px) {
   .header-mobile {
     display: none;
   }
 }
+
 
 @media (max-width: 1100px) {
   .page-header {
@@ -21,5 +51,376 @@
   .menu:focus {
     cursor: pointer;
     outline: none;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .page-main-inner {
+    flex-direction: column;
+    padding-top: 33px;
+    min-height: 100%;
+  }
+
+  .main-img {
+    position: static;
+  }
+
+  .scroll-btn {
+    display: none;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .page-footer-nav {
+    width: 100%;
+    padding-top: 41px;
+  }
+
+  .footer-navigation {
+    justify-content: space-around;
+  }
+
+  .footer-social {
+    padding-top: 20px;
+    justify-content: center;
+  }
+
+  .footer-bottom > p {
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 980px) {
+  .title-h1 {
+    font-size: 35px;
+  }
+
+  .title-h2 {
+    font-size: 30px;
+  }
+
+  .events-list {
+    grid-template: 450px / repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .events-item-detail {
+    z-index: 1;
+    padding: 15px;
+  }
+
+  .text-date {
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 16px;
+  }
+
+  .events-item .title-h4 {
+    font-size: 20px;
+  }
+
+  .events-item .btn {
+    font-size: 10px;
+    line-height: 100%;
+  }
+
+  .events-item .btn-link {
+    padding: 15px 20px;
+  }
+
+  .workout-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 310px 20px 310px 20px 310px;
+    grid-template-areas: "a a" "b b" "c c" "d d" "f f";
+  }
+
+  .workout-01 {
+    grid-area: a / auto / a / auto;
+  }
+
+  .workout-02 {
+    grid-area: a / auto / b / auto;
+  }
+
+  .workout-03 {
+    grid-area: b / auto / c / auto;
+  }
+
+  .workout-04 {
+    grid-area: c / auto / d / auto;
+  }
+
+  .workout-05 {
+    grid-area: d / auto / f / auto;
+  }
+
+  .workout-06 {
+    grid-area: f / auto / f / auto;
+  }
+}
+
+@media (max-width: 795px) {
+  .title-h3 {
+    font-size: 30px;
+  }
+
+  .circle-form {
+    top: -35px;
+    left: 34px;
+  }
+
+  .about-item {
+    flex: 0 0 100%;
+  }
+
+  .about-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .btn-main,
+  .btn-about {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 650px) {
+  .title-h1 {
+    font-size: 25px;
+  }
+
+  .events-list {
+    grid-template: 450px / repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .events-item-yoga {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    height: 366px;
+    padding-bottom: 60%;
+  }
+
+  .title-h4 {
+    font-size: 20px;
+  }
+
+  .workout-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 20px 0;
+  }
+
+  .workout-01 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .workout-02 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .workout-03 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .workout-04 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .workout-05 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .workout-06 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  .contacts-form-input {
+    flex-direction: column;
+  }
+
+  .contacts-form-email {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .btn-form {
+    box-sizing: border-box;
+  }
+
+  .circle-form {
+    top: -36px;
+    left: -51px;
+  }
+
+  .contacts-form-email {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 510px) {
+  .page-header-inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .header-logo {
+    margin-right: 40px;
+  }
+
+  .title-h1 {
+    font-size: 26px;
+  }
+
+  .title-h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .title-description,
+  .about-description {
+    font-size: 16px;
+  }
+
+  .title-h3 {
+    font-size: 26px;
+  }
+
+  .page-events {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .events-list {
+    grid-template: 310px / repeat(2, 1fr);
+  }
+
+  .text-date {
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  .events-item .title-h4,
+  .title-h4,
+  .title-h5 {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .events-btn {
+    font-size: 12px;
+    max-width: 87px;
+    left: 0;
+  }
+
+  .events-item .btn-link {
+    padding: 15px 10px;
+  }
+
+  .page-form .title-h3,
+  .page-events .title-h3,
+  .page-about .title-h3 {
+    line-height: 32px;
+  }
+
+  .page-workout {
+    padding-bottom: 80px;
+  }
+
+  .page-workout .title-h4 {
+    opacity: 0.6;
+  }
+
+  .workout-date,
+  .skill-description,
+  .popup-description {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .workout-description {
+    font-size: 12px;
+  }
+
+  .events-item-yoga {
+    height: 273px;
+  }
+
+  .contacts-form {
+    margin: 0;
+  }
+
+  .page-about {
+    padding-top: 80px;
+  }
+
+  .page-skills-inner {
+    flex-direction: column;
+  }
+
+  .page-skills {
+    padding-bottom: 80px;
+  }
+
+  .footer-navigation-link,
+  .footer-email-link  {
+    font-size: 12px;
+  }
+
+  .footer-navigation-item {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .footer-navigation,
+  .footer-social {
+    justify-content: space-between;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+  }
+
+  .popup-container-dialog {
+    max-width: 360px;
+    top: 1020px !important;
+    left: calc(50% - 180px) !important;
+  }
+
+  .popup-container-dialog .popup-content {
+    padding: 0 10px 40px 10px;
+  }
+
+  .circle-popup {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -26px;
+    left: 21px;
   }
 }
