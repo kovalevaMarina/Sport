@@ -308,10 +308,6 @@ a {
   opacity: 0.6;
 }
 
-.events-item:last-child {
-  margin-right: 0;
-}
-
 .events-item {
   background-size: cover;
   background-repeat: no-repeat;
@@ -322,6 +318,7 @@ a {
   position: relative;
   z-index: 1;
   padding: 30px;
+  height: 20%;
 }
 
 .events-item-maraphone {
@@ -342,16 +339,28 @@ a {
   background-image: url(../images/files/@1x/Vebinar_2.png);
 }
 
+.btn-item {
+  padding-left: 30px;
+}
+
 .btn-link {
   padding: 20px 37px;
   color: #FBF138;
   background: #2B3541;
   box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
   cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 
 .btn-link:focus {
   outline: none;
+}
+
+.btn-popup {
+  width: 30px;
+  height: 30px;
+  background: #2B3541;
 }
 
 .page-workout {

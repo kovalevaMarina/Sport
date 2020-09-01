@@ -1,6 +1,6 @@
 @media (max-width: 1280px) {
   .main-content {
-    padding-bottom: 40px;
+    padding-bottom: 73px;
   }
 
   .main-img {
@@ -121,9 +121,38 @@
     grid-gap: 15px;
   }
 
-  .events-item-detail {
-    z-index: 1;
+  .page-events .title-h3 {
+    margin-bottom: 20px;
+  }
+
+  .events-item-detail,
+  .btn-item {
     padding: 15px;
+  }
+
+  .btn-link {
+    display: block !important;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/icons/btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+  }
+
+  .page-events span {
+    display: none;
+  }
+
+  .events-btn {
+    font-size: 12px;
+    max-width: 87px;
+    left: 0;
+    padding: 6px 10px;
   }
 
   .text-date {
@@ -134,15 +163,6 @@
 
   .events-item .title-h4 {
     font-size: 20px;
-  }
-
-  .events-item .btn {
-    font-size: 10px;
-    line-height: 100%;
-  }
-
-  .events-item .btn-link {
-    padding: 15px 20px;
   }
 
   .workout-list {
@@ -259,6 +279,29 @@
     grid-row: 6/7;
   }
 
+  .workout-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .workout-image {
+    margin-right: 25px;
+  }
+
+  .page-workout .title-h5 {
+    margin: 16px 0;
+  }
+
+  .page-skills .title-h5,
+  .page-workout .title-h5 {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .workout-description {
+    font-size: 12px;
+  }
+
   .contacts-form-input {
     flex-direction: column;
   }
@@ -281,6 +324,29 @@
     width: 100%;
     box-sizing: border-box;
   }
+
+  .skill-description{
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .popup-container-dialog {
+    max-width: 360px;
+    top: 1020px !important;
+    left: calc(50% - 180px) !important;
+  }
+
+  .popup-container-dialog .popup-content {
+    padding: 0 10px 40px 10px;
+  }
+
+  .circle-popup {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -26px;
+    left: 21px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -290,11 +356,13 @@
   }
 
   .header-logo {
+    width: 78px;
+    height: 24px;
     margin-right: 40px;
   }
 
   .title-h1 {
-    font-size: 26px;
+    font-size: 25px;
   }
 
   .title-h2 {
@@ -305,6 +373,10 @@
   .title-description,
   .about-description {
     font-size: 16px;
+  }
+
+  .title-description {
+    margin-bottom: 35px;
   }
 
   .title-h3 {
@@ -332,16 +404,6 @@
     line-height: 120%;
   }
 
-  .events-btn {
-    font-size: 12px;
-    max-width: 87px;
-    left: 0;
-  }
-
-  .events-item .btn-link {
-    padding: 15px 10px;
-  }
-
   .page-form .title-h3,
   .page-events .title-h3,
   .page-about .title-h3 {
@@ -357,14 +419,13 @@
   }
 
   .workout-date,
-  .skill-description,
   .popup-description {
     font-size: 16px;
     line-height: 150%;
   }
 
-  .workout-description {
-    font-size: 12px;
+  .workout-item {
+    padding: 20px;
   }
 
   .events-item-yoga {
@@ -404,23 +465,5 @@
 
   .footer-bottom p {
     font-size: 10px;
-  }
-
-  .popup-container-dialog {
-    max-width: 360px;
-    top: 1020px !important;
-    left: calc(50% - 180px) !important;
-  }
-
-  .popup-container-dialog .popup-content {
-    padding: 0 10px 40px 10px;
-  }
-
-  .circle-popup {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: -26px;
-    left: 21px;
   }
 }
